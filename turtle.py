@@ -4,16 +4,16 @@ import time
 # Set up the screen
 screen = turtle.Screen()
 screen.setup(width=500, height=500)
-screen.bgpic("/home/tux/bitmap.png")
+screen.bgpic("./bitmap.png")
 
 # Register the turtle shape
-screen.register_shape("/home/tux/tt.gif")
+screen.register_shape("./tt.gif")
 
 time.sleep(5)
 # Create a turtle with the registered shape
 t = turtle.Turtle()
 t.hideturtle()
-t.shape("/home/tux/tt.gif")  # Set the turtle shape to the PNG image
+t.shape("/.tt.gif")  # Set the turtle shape to the PNG image
 
 t.speed(4)  # Set the speed of the turtle
 t.left(90)
@@ -21,7 +21,7 @@ t.pensize(10)
 t.pencolor("white")
 
 tt = turtle.Turtle()
-tt.shape("/home/tux/tt.gif")  # Set the turt+le shape to the PNG image
+tt.shape("./tt.gif")  # Set the turt+le shape to the PNG image
 tt.hideturtle()
 
 tt.speed(4)  # Set the speed of the turtle
